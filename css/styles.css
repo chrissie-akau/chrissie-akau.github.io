@@ -5,7 +5,7 @@ Description: This theme is a pretty versatile, that places the emphasis of the h
 License: Free to use for personal and commercial, but you need to place back link in the bottom of the template.
 */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
 
 * {
     margin: 0;
@@ -317,7 +317,7 @@ background: none;
     width: 100%;
     position: relative;
     padding: 0px;
-    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0);
     /*background: url("../images/banner-bg.jpg") no-repeat;*/
     background-size: 100% 100%;
     background-size: cover;
