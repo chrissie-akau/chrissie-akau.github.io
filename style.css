@@ -5,7 +5,7 @@
 
 .navbar {
     border: 0px solid #fff;
-    min-height: 40px;
+    min-height: 30px;
     margin-bottom: 0px;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .navStyle {
-    float: right;
+    float: center;
 }
 
 .navStyle ul {
@@ -27,12 +27,8 @@
     margin: 0 5px;
 }
 
-.navStyle ul li:first-child {
-	/*margin:0px;*/;
-}
-
 .navStyle ul li:last-child {
-    margin: 0 0 0 23px;
+    margin: 0 0 0 10px;
 }
 
 .navStyle ul li a {
