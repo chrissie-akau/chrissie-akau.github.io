@@ -10,9 +10,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajac/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudlare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/jsbootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/45057f1597.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!--Personal CSS Style Shet-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,55 +21,48 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
 
-  <!--NavBar-->
-<header>
-<nav class = "navbar navbar-expand-md navbar-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-    data-target="navbarResponsive">
-      <span class="navbar-toggler-icon"></span>
+<body data-spy="scroll" data-target="#navbarResponsive">
+<!--Start of Home Section-->
+<div id="home">
+<!--Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
   </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Professional Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>   
-     </div>
-</div>  
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>      <li class="nav-item">
+        <a class="nav-link" href="#experience">Experience</a>
+      </li>      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-</header>
+</div>
+
   <!--Image Slider-->
-<div id="slides" class="carousel slide" data-ride="carousel">
-<ul class ="carousel-indicators">
-      <li data-target="#slides" data-slide-to="0" class="active"></li>
-      <li data-target="#slides" data-slide-to="1"></li>
-</ul>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+<ol class ="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+</ol>
 <div class="carousel-inner">
   <div class="carousel-item active">
     <img src="img/background.png">
     <div class="carousel-caption">
-      <h1 class="display-2">Chrissie Akau</h1>
-      <h3>Full Stack Software Developer</h3>
-      <button type="button" class="btn btn-outline-light btn-lg">Button</button>
+      <h1 class="display-2">Full Stack Software Developer</h1>
     </div>
   </div>
   <div class="carousel-item">
@@ -78,16 +70,44 @@
   </div>
 </div>
 </div>
-  <!--JumboTron-->
+
+<!--JumboTron-->
 <div class="container-fluid">
-<div class="row jumbotron">
-  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-    <p class="lead">Hello this is where some links may live</p>
+  <div class="row jumbotron">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+      <p class="lead">Hello this is where some links may live</p>
+    </div>
   </div>
 </div>
 </div>
-</div>
-  <!--Hero Section-->
+<!--End of Home Section-->
+
+
+<!--Start of About Me Section Two Column-->
+<div id="about">
+<div class="container-fluid padding">
+  <div class="row padding">
+      <div class="col-lg-6">
+        <h2>If you build it...</h2>
+        <p>This is what the about me section should use so I can put my picture in it</p>
+        <p>This is looking great, I'm really excited.</p>
+        <p>Making some great progress!</p>
+        <br>
+        <a href="#" class="btn btn-primary">Resume</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/desk.png" class="img-fluid">
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" arai-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" arai-hidden="true"></span>
+      </a>
+  </div>
+  </div>
+  <hr class="my-4">
+  <!--Large Section, Could Replace JumboTron-->
 <div class="container-fluid padding">
 <div class="row welcome text-center">
   <div class="col-12">
@@ -97,9 +117,11 @@
     <div class="col-12">
       <p class="lead">Hello, this is my website</p>
     </div>
+  </div>
 </div>
 </div>
-<!--Three Column Section-->
+
+<!--Skills Three Column Section-->
 <div class="container-fluid padding">
 <div class="row text-center padding">
   <div class="col-xs-12 col-sm-6 col-md-4">
@@ -120,59 +142,25 @@
 </div>
 <hr class="my-4">
 </div>
-<!--Two Column Section-->
-<div class="container-fluid padding">
-<div class="row padding">
-    <div class="col-lg-6">
-      <h2>If you build it...</h2>
-      <p>This is what the about me section should use so I can put my picture in it</p>
-      <p>This is looking great, I'm really excited.</p>
-      <p>Making some great progress!</p>
-      <br>
-      <a href="#" class="btn btn-primary">Resume</a>
+
+<!--Portfolio Header Jumbotron-->
+<div id="portfolio">
+<div class="jumbotron container-fluid">
+  <h3 class="heading">Portfolio</h3>
+  <div class="heading-underline">
+
+<div class="row no-padding">
+  <div class="col-sm-4">
+    <div class="portfolio">
+      
     </div>
-    <div class="col-lg-6">
-      <img src="img/desk.png" class="img-fluid">
+  </div>
+</div>  
+  </div>
     </div>
-</div>
-</div>
-<hr class="my-4">
+  </div>
 
-<!--Cards-->
-<div class="container-fluid padding">
-<div class="row padding">
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team1.png">
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">John is an Internet entreprenuner.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team2.png">
-          <div class="card-body">
-            <h4 class="card-title">Mary Joe</h4>
-            <p class="card-text">Mary Joe is an Internet entreprenuner.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team3.png">
-          <div class="card-body">
-            <h4 class="card-title">Phil Ho</h4>
-            <p class="card-text">Phil is an Internet entreprenuner.</p>
-          </div>
-        </div>
-      </div>
-</div>
-</div>
-
-
-<!--Two Column Section-->
+<!--Addtional Two Column Section-->
 <div class="container-fluid padding">
   <div class="row padding">
       <div class="col-lg-6">
@@ -208,7 +196,7 @@
 <div class="container-fluid padding">
 <div class="row text-center">
   <div class="col-md-4">
-    <img src="img/w3newbie.png">
+    <img src="img/logo.png">
     <hr class="light">
     <p>555-555-5555</p>
     <p>email@email.com</p>
@@ -231,7 +219,7 @@
   </div>
   <div class="col-12">
     <hr class="light-100">
-    <h5>&copy; Chrissie Akau</h5>
+    <h5>&copy; 2020 Chrissie Akau</h5>
   </div>
 </div>
 </div>

@@ -1,26 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,700');
 
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #222;
 }
-.navbar-default {
-  background-color: #222;
-  background-image: none;
-  background-repeat: no-repeat;
-}
 .navbar {
-  padding: .8rem;
-  position: sticky;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: #222!important;
+}
+.navbar-brand img{
+  height: 2rem;
 }
 .navbar-nav li {
-  padding-right: 20px;
+  padding-right: .7rem;
 }
-.navlink{
-  font-size: 1.1em !important;
-
+.navbar-dark .navbar-nav .navbar-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .navbar-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(177, 0, 0);
 }
 .carousel-inner img {
   width: 100%;
@@ -35,12 +39,6 @@ html, body {
   font-size: 400%;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
-}
-.carousel-caption h3 {
-  font-size: 150%;
-  font-weight: 400;
-  text-shadow: 1px 1px 10px #000;
-  padding-bottom: 1rem;
 }
 .btn-primary {
   background-color: #6648b1;
@@ -144,15 +142,6 @@ hr.light-100 {
     font-size: 200%;
     text-transform: uppercase;
     text-shadow: 1px 1px 15px #000;
-  }
-  .carousel-caption h3 {
-    font-size: 100%;
-    font-weight: 300;
-    padding-bottom: .2rem;
-  }
-  .carousel-caption .btn {
-    font-size: 95%;
-    padding: 8px 14px;
   }
   .display-4 {
     font-size: 200%;
