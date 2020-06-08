@@ -12,8 +12,11 @@
     <script src="https://ajax.googleapis.com/ajac/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="bootstrap-4.1.3-dist/jsbootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/45057f1597.js" crossorigin="anonymous"></script>
-    <!--Personal CSS Style Shet-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!--Personal CSS Style Sheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/fixed.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,6 +26,7 @@
   </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
+
 <!--Start of Home Section-->
 <div id="home">
 <!--Navigation-->
@@ -31,6 +35,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
@@ -38,27 +43,29 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
-      </li>      <li class="nav-item">
+      </li>      
+      <li class="nav-item">
         <a class="nav-link" href="#experience">Experience</a>
-      </li>      <li class="nav-item">
+      </li>      
+      <li class="nav-item">
         <a class="nav-link" href="#skills">Skills</a>
-      </li>      <li class="nav-item">
+      </li>      
+      <li class="nav-item">
         <a class="nav-link" href="#portfolio">Portfolio</a>
-      </li>      <li class="nav-item">
+      </li>      
+      <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
-</div>
-
-  <!--Image Slider-->
+<!--Image Slider-->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
 <ol class ="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 </ol>
-<div class="carousel-inner">
+<div class="carousel-inner" role="listbox">
   <div class="carousel-item active">
     <img src="img/background.png">
     <div class="carousel-caption">
@@ -70,12 +77,15 @@
   </div>
 </div>
 </div>
-
-<!--JumboTron-->
+<!--Professional Links JumboTron-->
 <div class="container-fluid">
   <div class="row jumbotron">
-    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-      <p class="lead">Hello this is where some links may live</p>
+    <div class="col-12 text-center">
+      <a href="https://github.com/chrissie-akau" target="_blank"><i class="fab fa-github-square"></i></a>
+      <a href="https://www.linkedin.com/in/chrissieakau" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/channel/UCMKWGsUzg0zZMARLHELqS6Q?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square"></i></a>
+      <br>
+      <a href="#" target="_blank" class="btn btn-primary">Contact</a>
     </div>
   </div>
 </div>
@@ -84,141 +94,287 @@
 
 
 <!--Start of About Me Section Two Column-->
-<div id="about">
+<div id="about" class="offset">
 <div class="container-fluid padding">
   <div class="row padding">
       <div class="col-lg-6">
-        <h2>If you build it...</h2>
-        <p>This is what the about me section should use so I can put my picture in it</p>
-        <p>This is looking great, I'm really excited.</p>
-        <p>Making some great progress!</p>
-        <br>
-        <a href="#" class="btn btn-primary">Resume</a>
+        <h1 class="display-4">ABOUT ME</h1>
+        <hr class="short-bar">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam sequi minus ex fuga ut minima cupiditate quia sunt amet. Consequatur placeat eius ipsam aperiam itaque iusto magni dolorum necessitatibus.</p>
       </div>
       <div class="col-lg-6">
         <img src="img/desk.png" class="img-fluid">
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" arai-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" arai-hidden="true"></span>
-      </a>
   </div>
   </div>
+</div>
   <hr class="my-4">
-  <!--Large Section, Could Replace JumboTron-->
+<!--End of About Me Section Two Column-->
+
+
+<!--Start of Experience Section Two Column-->
+<div id="experience" class="offset">
+  <div class="container-fluid padding">
+      <div class="experience-contain">
+        <div class="col-12">
+          <h1 class="display-4">EXPERIENCE</h1>
+          <hr class="short-bar">
+          <div class="process-wrapper">
+            <div id="progress-bar-container">
+              <ul>
+                <li class="step step01 active"><div class="step-inner">College</div></li>
+                <li class="step step02"><div class="step-inner">Work</div></li>
+                <li class="step step03"><div class="step-inner">Coding Bootcamp</div></li>
+                <li class="step step04"><div class="step-inner">Volunteer</div></li>
+                <li class="step step05"><div class="step-inner">Resume</div></li>
+              </ul>
+              
+              <div id="line">
+                <div id="line-progress"></div>
+              </div>
+            </div>
+            
+            <div id="progress-content-section">
+              <div class="section-content college active">
+                <span><i class="fas fa-university"></i></span>
+                <h2>Loyola Marymount University</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+              </div>
+              
+              <div class="section-content work">
+                <span><i class="fas fa-briefcase"></i></span>
+                <h2>Work</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+              </div>
+              
+              <div class="section-content codingbootcamp">
+                <span><i class="fas fa-file-code"></i></span>
+                <h2>Coding Bootcamp</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+              </div>
+              
+              <div class="section-content volunteer">
+                <span><i class="fas fa-hands-helping"></i></span>
+                <h2>Volunteer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+              </div>
+              
+              <div class="section-content resume">
+                <span><i class="fas fa-file-pdf"></i></span>
+                <h2>Resume</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci. <br>
+                  <a href="#" class="btn btn-primary">Download Resume</a></p>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>       
+  </div>                
+</div>
+<hr class="my-4">
+  <!--End of Experience Section Two Column-->
+
+
+  <!--Beginning of Skills Section-->
+<div id="skills" class="offset">
 <div class="container-fluid padding">
 <div class="row welcome text-center">
   <div class="col-12">
-    <h1 class="display-4">I was born and raised in Albuquerque, New Mexico...</h1>
+    <h1 class="display-4">SKILLS</h1>
     </div>
     <hr>
     <div class="col-12">
-      <p class="lead">Hello, this is my website</p>
+      <p class="lead">Front End Programming</p>
     </div>
   </div>
 </div>
 </div>
 
-<!--Skills Three Column Section-->
 <div class="container-fluid padding">
 <div class="row text-center padding">
-  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="col-xs-12 col-sm-3">
     <i class="fab fa-html5"></i>
-    <h3>HTML5</h3>
-    <p>Built with the latest version of HTML, HTML5.</p>
-  </div>
-  <div class="col-xs-12 col-sm-6 col-md-4">
-    <i class="fab fa-bootstrap"></i>
-    <h3>BOOTSTRAP</h3>
-    <p>Built with the latest version of Bootstrap, Bootstrap.</p>
-  </div>
-  <div class="col-sm-12 col-md-4">
+    <p>HTML5</p>
+    </div>
+    <div class="col-xs-12 col-sm-3">
     <i class="fab fa-css3"></i>
-    <h3>CSS3</h3>
-    <p>Built with the latest version of CSS3, CSS3.</p>
+    <p>CSS3</p>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <i class="fab fa-js-square"></i>
+    <p>JAVASCRIPT</p>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <i class="fab fa-react"></i>
+      <p>REACT</p>
+    </div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+    <div class="col-12">
+      <p class="lead">Back End Programming</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row text-center padding">
+    <div class="col-xs-12 col-sm-4">
+      <i class="fas fa-gem"></i>
+    <p>RUBY</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <img class ="rails"src="img/icons/icons8-tracks-100.png"/>
+    <p>RAILS</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <img class ="postgresql"src="img/icons/icons8-postgresql-96.png"/>
+    <p>POSTGRESQL</p>
+    </div>
+</div>
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+      <div class="col-12">
+        <p class="lead">Editing, Motion Graphics, and Design</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="container-fluid padding">
+  <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-3">
+        <div class="adobe1">
+         <i class="fab fa-adobe"></i>
+        </div>
+      <p>ADOBE PREMIERE</p>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <i class="fas fa-film"></i>
+        <p>FINALCUT PRO X AND 7</p>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="adobe3">
+          <i class="fab fa-adobe"></i>
+       </div>
+      <p>ADOBE PHOTOSHOP</p>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="adobe2">
+          <i class="fab fa-adobe"></i>
+         </div>
+      <p>ADOBE AFTER EFFECTS</p>
+      </div>
   </div>
 </div>
 <hr class="my-4">
-</div>
+<!--End of Skills Section -->
 
-<!--Portfolio Header Jumbotron-->
-<div id="portfolio">
-<div class="jumbotron container-fluid">
-  <h3 class="heading">Portfolio</h3>
-  <div class="heading-underline">
+
+<!--Beginning of Portfolio Section -->
+<div id="portfolio" class="offset">
+<div class="jumbotron1 container-fluid text-center">
+
+  <h1 class="display-4">PORTFOLIO</h1>
+  <hr class="short-bar">
 
 <div class="row no-padding">
   <div class="col-sm-4">
     <div class="portfolio">
-      
+      <a href="img/1.png" target="_blank">
+        <img src="img/1.png">
+      </a>
     </div>
   </div>
-</div>  
-  </div>
+  <div class="col-sm-4">
+    <div class="portfolio">
+      <a href="img/2.png" target="_blank">
+        <img src="img/2.png">
+      </a>
     </div>
   </div>
-
-<!--Addtional Two Column Section-->
-<div class="container-fluid padding">
-  <div class="row padding">
-      <div class="col-lg-6">
-        <h2>Our Philosophy</h2>
-        <p>Is love and greatness</p>
-        <p>This is looking great, I'm really excited.</p>
-        <br>
-      </div>
-      <div class="col-lg-6">
-        <img src="img/bootstrap2.png" class="img-fluid">
-      </div>
+  <div class="col-sm-4">
+    <div class="portfolio">
+      <a href="img/3.png" target="_blank">
+        <img src="img/3.png">
+      </a>
+    </div>
   </div>
-  <hr class="my-4">
+  <div class="col-sm-4">
+    <div class="portfolio">
+      <a href="img/4.png" target="_blank">
+        <img src="img/4.png">
+      </a>
+    </div>
   </div>
-
-<!--Connect-->
-<div class="container-fluid padding">
-<div class="row text-center padding">
+  <div class="col-sm-4">
+    <div class="portfolio">
+      <a href="img/5.png" target="_blank">
+        <img src="img/5.png">
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="portfolio">
+      <a href="img/6.png" target="_blank">
+        <img src="img/6.png">
+      </a>
+    </div>
+  </div>
+<div class="narrow text-center">
   <div class="col-12">
-    <h2>Connect</h2>
-  </div>
-  <div class="col-12 social padding">
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
   </div>
 </div>
+</div><!--End of Row-->
+</div><!--End of Jumbotron-->
+</div><!--End of ID-->
+<!--End of Portfolio Section-->
+<hr class="my-4">
+
+<!--Beginning Works In Progress-->
+<div class="col-12 text-center">
+  <h1 class="display-4">WORKS IN PROGRESS</h1>
+  <hr class="short-bar">
 </div>
+  <div class="row padding">
+    <div class="col-md-6">
+      <div class="card text-center">
+        <img class="card-img-top" src="img/background3.png">
+        <div class="card-body">
+          <h4>Beach Volleyball League App</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam reprehenderit nostrum atque ipsum minima dolorem, quidem ad, tempore doloribus temporibus aspernatur eaque quia. Odio vel, voluptates aliquid quia fugit recusandae?</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-center">
+        <img class="card-img-top" src="img/background2.png">
+        <div class="card-body">
+          <h4>Mico Greens Site</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam reprehenderit nostrum atque ipsum minima dolorem, quidem ad, tempore doloribus temporibus aspernatur eaque quia. Odio vel, voluptates aliquid quia fugit recusandae?</p>
+        </div>
+      </div>
+    </div>
+</div>
+<hr class="my-4">
+<!--End Works In Progress-->
 
 <!--Footer-->
+<div id="contact" class="offset">
 <footer>
-<div class="container-fluid padding">
-<div class="row text-center">
-  <div class="col-md-4">
+<div class="row justify-content-center">
+  <div class="col-md-5">
+    <div class="center">
     <img src="img/logo.png">
-    <hr class="light">
-    <p>555-555-5555</p>
+  </div>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium distinctio optio corrupti suscipit corporis! Error ea, rerum odit doloremque eaque nesciunt maiores excepturi velit nam, consequatur porro sequi hic obcaecati!</p>
+    <strong>Contact Info</strong>
+    <p>123-456-7890</p>
     <p>email@email.com</p>
-    <p>Street</p>
-    <p>City, State 90045</p>
   </div>
-  <div class="col-md-4">
-    <hr class="light">
-    <h5>Our Hours</h5>
-    <hr class="light">
-    <p>Monday-Friday 9am-5pm</p>
-    <p>Saturday 10am-4pm</p>
-  </div>
-  <div class="col-md-4">
-    <hr class="light">
-    <h5>Service Area</h5>
-    <hr class="light">
-    <p>Monday-Friday 9am-5pm</p>
-    <p>Saturday 10am-4pm</p>
-  </div>
-  <div class="col-12">
-    <hr class="light-100">
+  <div class="col-12 text-center">
+    <hr class="socket">
     <h5>&copy; 2020 Chrissie Akau</h5>
   </div>
 </div>
@@ -229,5 +385,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript.js"></script>
   </body>
 </html>
