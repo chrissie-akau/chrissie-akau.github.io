@@ -109,6 +109,52 @@ body {
 
 
 
+/*Start of Parallax CSS*/
+.parallax1 {
+  display: flex;
+  height: 400px;
+  padding: 45% 0 0;
+  background-image: url(img/albuquerque1.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  background-attachment: fixed;
+
+}
+.parallax2 {
+  display: flex;
+  height: 400px;
+  background-image: url(img/la2.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+.parallax3 {
+  display: flex;
+  height: 400px;
+  background-image: url(img/croatia3.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+.parallax4 {
+  display: flex;
+  height: 400px;
+  background-image: url(img/croatia4.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+.parallax5 {
+  display: block;
+  height: 400px;
+  background-image: url(img/croatia7.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  background-attachment: fixed;
+}
+/*End of Parallax CSS*/
+
+
 /*Start Of Experience*/
 .process-wrapper {
 	margin:auto;
@@ -319,14 +365,14 @@ body {
 .rails {
   font-size: 4em;
   margin: .5rem;
-  width: 22%;
-  height: auto;
+  width: 63px;
+  height: 63px;
 }
 .postgresql {
   font-size: 4em;
   margin: .5rem;
-  width: 22%;
-  height: auto;
+  width: 63px;
+  height: 63px;
 }
 .fa-adobe, .fa-film {
   font-size: 4em;
@@ -354,6 +400,7 @@ body {
 }
 .portfolio img {
   max-width: 100%;
+  filter: grayscale(100%);
   transition: transform .5s ease;
 }
 .row.no-padding [class*=col-] {
@@ -361,6 +408,7 @@ body {
 }
 .portfolio img:hover{
   transform: scale(1.1);
+  filter: grayscale(0);
   cursor: zoom-in;
 }
 .portfolio {
@@ -372,6 +420,13 @@ body {
 /*--Beginning of Works In Progress--*/
 .card {
   margin: 1rem;
+  display:block;
+}
+.card-img-top {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+  filter: grayscale(100%);
 }
 /*--End of Works In Progress--*/
 
@@ -381,15 +436,16 @@ footer {
   background-color: #000;
   color: #d5d5d5;
   width: 100%;
-  padding-top: 2rem 0 3rem;
   display: block;
   text-align: center;
+  overflow: auto;
 }
 footer img {
   height: 4.5rem;
 }
 footer p {
   text-align: center;
+  display:block;
 }
 hr.socket {
   border-top: .2rem solid #fff;
@@ -418,10 +474,6 @@ hr.socket {
   .display-4 {
     font-size: 200%;
   }
-  .social a {
-    font-size: 2.5em;
-    padding: 1.2rem;
-  }
   .body {
     padding-top:0px;
   }
@@ -431,9 +483,10 @@ hr.socket {
   .display-4 {
     font-size: 160%;
   }
-  .social a {
-    font-size: 2em;
-    padding: .7rem;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
+    background-attachment: scroll;
   }
 }
 

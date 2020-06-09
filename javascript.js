@@ -27,3 +27,6 @@ $(".step05").click( function() {
 	$("#line-progress").css("width", "100%");
 	$(".resume").addClass("active").siblings().removeClass("active");
 });
+$('.navbar-nav>li>a').on('click', function() {
+	$('.navbar-collapse').collapse('hide');
+});
