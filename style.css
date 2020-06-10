@@ -89,12 +89,12 @@ body {
   padding: 2px;
   border-radius: 0px!important;
 }
-.fa-github-square, .fa-linkedin, .fa-youtube-square{
+.fa-github-square, .fa-linkedin, .fa-youtube-square, .fa-vimeo{
   font-size: 3em;
   margin: .8rem;
   color: white;
 }
-.fa-github-square:hover, .fa-linkedin:hover, .fa-youtube-square:hover {
+.fa-github-square:hover, .fa-linkedin:hover, .fa-youtube-square:hover, .fa-vimeo:hover {
   background-color:  rgb(19, 200, 255);
 }
 .btn-primary {
@@ -138,7 +138,7 @@ body {
 .parallax4 {
   display: flex;
   height: 400px;
-  background-image: url(img/croatia4.jpg);
+  background-image: url(img/newmexico3.jpg);
   background-size: cover;
   opacity: 0.5;
   background-attachment: fixed;
