@@ -182,12 +182,11 @@ body {
 	content:" ";
 	display:block;
 	margin:auto;
-	width:30px;
-	height:30px;
+	width:20px;
+	height:20px;
 	border-radius:50%;
 	border:solid 2px #aaa;
-	transition:all ease 0.3s;
-     
+	transition:all ease 0.3s;   
 }
 
 #progress-bar-container li.active:before, #progress-bar-container li:hover:before {
@@ -223,18 +222,11 @@ body {
 }
 
 #progress-bar-container li:after {
-	content:" ";
-	display:block;
-	width:6px;
-	height:6px;
-	background:#777;
 	margin:auto;
-	border:solid 7px #fff;
 	border-radius:50%;
 	margin-top:40px;
 	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
 	transition:all ease 0.2s;
-     
 }
 
 #progress-bar-container li:hover:after {
@@ -486,6 +478,11 @@ hr.socket {
 @media only screen and (max-device-width: 1366px) {
   .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
     background-attachment: scroll;
+  }
+}
+@media (max-width: 320px) {
+  #progress-bar-container li .step-inner {
+    font-size: 8px;
   }
 }
 
