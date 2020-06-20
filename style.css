@@ -28,7 +28,13 @@ body {
   margin: 0 auto;
   padding-top: 2rem;
 }
-
+.paragraph {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#profilepic {
+  margin-top: 70px;
+}
 
 /* Start of Navagation Bar CSS*/
 .navbar {
@@ -389,37 +395,99 @@ body {
   border-radius: 0;
   padding: 1rem 0 0rem;
 }
-.portfolio img {
-  max-width: 100%;
-  filter: grayscale(100%);
-  transition: transform .5s ease;
+ul.filters{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
 }
-.row.no-padding [class*=col-] {
-  padding:0;
+
+ul.filters > li{
+  list-style: none;
+  display: inline-block;
 }
-.portfolio img:hover{
-  transform: scale(1.1);
-  filter: grayscale(0);
-  cursor: zoom-in;
+
+ul.filters > li > a{
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 20px;
 }
-.portfolio {
+
+ul.filters > li > a:hover{
+  background-color: #e6e9ed;
+}
+
+ul.filters > li.active > a{
+  color: #fff;
+  background-color: deepskyblue;
+}
+
+.card{
+  position: relative;
+  margin-bottom: 50px;
+  color: #000;
+  border-radius: 0;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 1px 1px 1.5px rgba(0,0,0,0.075);
+}
+
+.card-head{
+  position: relative;
   overflow: hidden;
+}
+
+.card-hover{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 191, 255,0.9);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.card-body{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h4.title{
+  color: #000000;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.card-btn{
+  margin-bottom: -40px;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #eee;
+  border-radius: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card-btn:hover{
+  background-color: deepskyblue;
+  color: #fff;
 }
 /*--End Of Portfolio--*/
 
 
-/*--Beginning of Works In Progress--*/
-.card {
-  margin: 1rem;
-  display:block;
-}
-.card-img-top {
-  width: 100%;
-  height: 35vw;
-  object-fit: cover;
-  filter: grayscale(100%);
-}
-/*--End of Works In Progress--*/
 
 
 /*--Beginning of Contact--*/
@@ -474,6 +542,9 @@ hr.socket {
   .display-4 {
     font-size: 160%;
   }
+  .img-fluid {
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-device-width: 1366px) {
   .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
@@ -485,7 +556,20 @@ hr.socket {
     font-size: 8px;
   }
 }
+@media (min-width:767px) {
+  #portfolio .portfolio-item {
+      margin: 0 0 30px
+  }
+}
 
+@media (max-width: 767px) {
+    .isotope-item {
+        text-align: center;
+    }
+    #profilepic {
+      margin-top: 20px;
+    }
+}
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
