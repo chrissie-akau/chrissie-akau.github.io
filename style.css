@@ -348,6 +348,15 @@ body {
   width: 33.3%;
   padding: 8px;
 }
+#editingrow {
+  margin: auto;
+}
+.img-full {
+  display: block;
+}
+.img-mobile{
+  display: none;
+}
 /*End Of Skills Section*/
 
 
@@ -523,11 +532,11 @@ hr.socket {
 }
 @media (max-width: 320px) {
   #progress-bar-container li .step-inner {
-    font-size: 5px;
+    font-size: 2px;
   }
   #progress-bar-container li:before {
-    width:10px;
-    height:10px; 
+    width:3px;
+    height:3px; 
   }
 }
 @media (min-width:767px) {
@@ -546,6 +555,14 @@ hr.socket {
 @media only screen and (max-width: 992px) {
   .columns {
     width: 100%;
+  }
+}
+@media (max-width: 992px) and (min-width:320px){
+  .img-full {
+    display: none;
+  }
+  .img-mobile {
+    display:block;
   }
 }
 /*---Firefox Bug Fix --*/
