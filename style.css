@@ -356,6 +356,10 @@ body {
 }
 .img-mobile{
   display: none;
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  margin: 0;
 }
 /*End Of Skills Section*/
 
@@ -563,8 +567,6 @@ hr.socket {
   }
   .img-mobile {
     display: block;
-    width: 25%;
-    margin: 0;
   }
 }
 /*---Firefox Bug Fix --*/
