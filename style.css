@@ -348,9 +348,11 @@ body {
   width: 33.3%;
   padding: 8px;
 }
+#editingrow {
+  margin: auto;
+}
 .img-full {
   display: block;
-  margin:auto;
 }
 .img-mobile{
   display: none;
