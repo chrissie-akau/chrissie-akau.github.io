@@ -348,57 +348,6 @@ body {
   width: 33.3%;
   padding: 8px;
 }
-.header-skills {
-  background-color: black;
-  color: #e7e7e7;
-}
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.price:hover {
-  background-color: #13c8ff;
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-.grey:hover {
-  background-color: #13c8ff;
-}
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-}
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
-}
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-@media only screen and (max-width: 992px) {
-  .columns {
-    width: 100%;
-  }
-}
-
-
 /*End Of Skills Section*/
 
 
@@ -574,7 +523,11 @@ hr.socket {
 }
 @media (max-width: 320px) {
   #progress-bar-container li .step-inner {
-    font-size: 8px;
+    font-size: 5px;
+  }
+  #progress-bar-container li:before {
+    width:10px;
+    height:10px; 
   }
 }
 @media (min-width:767px) {
@@ -582,7 +535,6 @@ hr.socket {
       margin: 0 0 30px
   }
 }
-
 @media (max-width: 767px) {
     .isotope-item {
         text-align: center;
@@ -590,6 +542,11 @@ hr.socket {
     #profilepic {
       margin-top: 20px;
     }
+}
+@media only screen and (max-width: 992px) {
+  .columns {
+    width: 100%;
+  }
 }
 /*---Firefox Bug Fix --*/
 .carousel-item {
