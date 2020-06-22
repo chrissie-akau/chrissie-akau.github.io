@@ -564,6 +564,7 @@ hr.socket {
   .img-mobile {
     display:block;
     width: 100%;
+    margin: 0;
   }
 }
 /*---Firefox Bug Fix --*/
